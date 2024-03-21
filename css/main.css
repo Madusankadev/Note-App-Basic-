@@ -180,3 +180,48 @@ body {
 .rightBar > div:nth-child(1) {
 
 }
+
+/* responsive */
+
+@media screen and (max-width: 700px) {
+    .leftBar {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        position: absolute;
+        height: fit-content;
+        width: calc(100% - 2rem);
+        padding: 1.2rem 1.4rem;
+    }
+
+    .mainControlsIcon {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .middleBar, .rightBar {
+        margin-top: 8rem;
+    }
+
+    .rightBar {
+        background: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .noteTitle {
+        width: 70vw;
+    }
+
+    .middleBar {
+        position: relative;
+    }
+
+    .rightBar {
+        position: absolute;
+        bottom: -8rem;
+        display: flex;
+        flex-direction: row;
+        right: 30%;
+    }
+}
